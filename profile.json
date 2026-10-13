@@ -3,7 +3,7 @@
   "handle": "cizzaman",
   "focus": "Software / AI automation",
   "system": [
-    ["OS", "macOS / Linux"],
+    ["OS", "Linux (primary) / macOS (secondary)"],
     ["Workflow", "Terminal-first"],
     ["Tools", "Codex / GitHub CLI"],
     ["Code", "Python / shell"]

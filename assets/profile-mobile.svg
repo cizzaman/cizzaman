@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="792" viewBox="0 0 600 792" role="img" aria-labelledby="title desc">
 <title id="title">Christian Landsnes — @cizzaman</title>
-<desc id="desc">A terminal-style profile with a black-and-white portrait of Christian Landsnes. Software and AI automation. Terminal-first workflows with Python, shell, Codex, and GitHub CLI.</desc>
+<desc id="desc">A terminal-style profile with a black-and-white portrait of Christian Landsnes. Software and AI automation. Linux is the primary operating system; macOS is secondary. Terminal-first workflows with Python, shell, Codex, and GitHub CLI.</desc>
 <defs><clipPath id="card"><rect width="600" height="792" rx="16"/></clipPath></defs>
 <g clip-path="url(#card)" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace">
 <rect width="600" height="792" fill="#10151d"/>
@@ -18,8 +18,8 @@
 <text x="28" y="347" font-size="17" fill="#a5cfad" >System</text>
 <path d="M107.19999999999999 341 H572" fill="none" stroke="#293342" stroke-dasharray=""/>
 <text x="28" y="383" font-size="19" fill="#d9ba8c" >OS</text>
-<path d="M64.8 379 H411.8" fill="none" stroke="#354153" stroke-dasharray="1 6"/>
-<text x="572" y="383" font-size="19" fill="#8bc6eb" text-anchor="end">macOS / Linux</text>
+<path d="M64.8 379 H161.0" fill="none" stroke="#354153" stroke-dasharray="1 6"/>
+<text x="572" y="383" font-size="19" fill="#8bc6eb" text-anchor="end">Linux (primary) / macOS (secondary)</text>
 <text x="28" y="415" font-size="19" fill="#d9ba8c" >Workflow</text>
 <path d="M133.2 411 H400.4" fill="none" stroke="#354153" stroke-dasharray="1 6"/>
 <text x="572" y="415" font-size="19" fill="#8bc6eb" text-anchor="end">Terminal-first</text>

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build self-contained profile SVGs with Python's standard library."""
-import base64
 import html
+import base64
 import json
 from pathlib import Path
 
@@ -27,7 +27,7 @@ def portrait(x, y, w, h):
 def begin(width, height):
     return [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
 <title id="title">{DATA['name']} — @{DATA['handle']}</title>
-<desc id="desc">A terminal-style profile with a black-and-white portrait of Christian Landsnes. Software and AI automation. Terminal-first workflows with Python, shell, Codex, and GitHub CLI.</desc>
+<desc id="desc">A terminal-style profile with a black-and-white portrait of Christian Landsnes. Software and AI automation. Linux is the primary operating system; macOS is secondary. Terminal-first workflows with Python, shell, Codex, and GitHub CLI.</desc>
 <defs><clipPath id="card"><rect width="{width}" height="{height}" rx="16"/></clipPath></defs>
 <g clip-path="url(#card)" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace">
 <rect width="{width}" height="{height}" fill="{BG}"/>

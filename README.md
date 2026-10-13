@@ -1,6 +1,6 @@
 <picture>
   <source media="(max-width: 600px)" srcset="assets/profile-mobile.svg">
-  <img src="assets/profile.svg" width="1200" alt="Christian Landsnes (@cizzaman). Software and AI automation. Terminal-first workflows with macOS, Linux, Python, shell, Codex, and GitHub CLI.">
+  <img src="assets/profile.svg" width="1200" alt="Christian Landsnes (@cizzaman). Software and AI automation. Linux is my primary operating system; macOS is secondary. Terminal-first workflows with Python, shell, Codex, and GitHub CLI.">
 </picture>
 
 <p align="center">
@@ -14,7 +14,8 @@ I'm **Christian Landsnes**, also known as **cizzaman**. My interests are softwar
 
 - **Software:** useful tools and workflows with less friction.
 - **AI:** agents and everyday automation.
-- **Environment:** macOS, Linux, Python, shell, Codex, and GitHub CLI.
+- **OS:** Linux is my primary operating system; macOS is secondary.
+- **Tools:** Python, shell, Codex, and GitHub CLI.
 
 </details>
 
