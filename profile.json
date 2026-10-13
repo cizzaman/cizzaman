@@ -1,7 +1,7 @@
 {
   "name": "Christian Landsnes",
   "handle": "cizzaman",
-  "focus": "Software / AI automation / HYROX",
+  "focus": "Software / AI automation",
   "system": [
     ["OS", "macOS / Linux"],
     ["Workflow", "Terminal-first"],
@@ -10,14 +10,7 @@
   ],
   "interests": [
     ["Software", "Useful tools, less friction"],
-    ["AI", "Agents & everyday automation"],
-    ["Sport", "HYROX / strength / endurance"]
+    ["AI", "Agents & everyday automation"]
   ],
-  "project": {
-    "name": "terminaltheme",
-    "description": "Matching themes for Terminal.app + Ghostty",
-    "stack": "Python / curses / macOS",
-    "url": "https://github.com/cizzaman/terminaltheme"
-  },
   "since": "2019"
 }

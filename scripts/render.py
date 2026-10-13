@@ -27,7 +27,7 @@ def portrait(x, y, w, h):
 def begin(width, height):
     return [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
 <title id="title">{DATA['name']} — @{DATA['handle']}</title>
-<desc id="desc">A terminal-style profile with an ASCII portrait. Software, AI automation, and HYROX. Featured project: terminaltheme, matching themes for Terminal.app and Ghostty.</desc>
+<desc id="desc">A terminal-style profile with a black-and-white portrait of Christian Landsnes. Software and AI automation. Terminal-first workflows with Python, shell, Codex, and GitHub CLI.</desc>
 <defs><clipPath id="card"><rect width="{width}" height="{height}" rx="16"/></clipPath></defs>
 <g clip-path="url(#card)" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace">
 <rect width="{width}" height="{height}" fill="{BG}"/>
@@ -62,45 +62,36 @@ def footer(parts, width, height):
 
 
 def desktop():
-    p = begin(1200, 744)
-    p += [portrait(24, 101, 396, 528), text(222, 654, "@cizzaman", 17, MUTED, text_anchor="middle"),
-          '<path d="M448 91 V650" stroke="#293342"/>',
+    p = begin(1200, 640)
+    p += [portrait(37, 91, 370, 435), text(222, 556, "@cizzaman", 17, MUTED, text_anchor="middle"),
+          '<path d="M448 91 V552" stroke="#293342"/>',
           text(483, 106, "$ whoami", 17, GREEN),
           text(483, 148, DATA['name'], 30, FG, font_weight="600"),
           text(483, 179, DATA['focus'], 18, BLUE)]
     p += section(483, 227, "System", 1167)
     p += rows(483, 258, DATA['system'], 684)
-    p += section(483, 387, "Interests", 1167)
-    p += rows(483, 419, DATA['interests'], 684)
-    p += section(483, 519, "Featured project", 1167)
-    p += [text(483, 552, DATA['project']['name'], 22, BLUE, font_weight="600"),
-          text(483, 581, DATA['project']['description'], 17, FG),
-          text(483, 609, DATA['project']['stack'], 16, MUTED),
-          text(483, 654, "$ build; automate; train", 17, GREEN),
-          '<rect x="741" y="640" width="9" height="18" fill="#a5cfad"/>']
-    footer(p, 1200, 744)
+    p += section(483, 403, "Focus", 1167)
+    p += rows(483, 435, DATA['interests'], 684)
+    p += [text(483, 552, "$ build; automate; repeat", 17, GREEN),
+          '<rect x="751" y="538" width="9" height="18" fill="#a5cfad"/>']
+    footer(p, 1200, 640)
     return "\n".join(p)
 
 
 def mobile():
-    p = begin(600, 960)
-    p += [portrait(22, 78, 174, 232),
+    p = begin(600, 792)
+    p += [portrait(22, 88, 174, 205),
           text(224, 120, "$ whoami", 17, GREEN),
           text(224, 163, "Christian", 28, FG, font_weight="600"),
           text(224, 198, "Landsnes", 28, FG, font_weight="600"),
           text(224, 235, "@cizzaman", 19, BLUE),
-          text(224, 274, "Software / AI / HYROX", 16, MUTED)]
+          text(224, 274, "Software / AI automation", 15, MUTED)]
     p += section(28, 347, "System", 572)
     p += rows(28, 383, DATA['system'], 544, step=32, size=19)
-    p += section(28, 532, "Interests", 572)
+    p += section(28, 532, "Focus", 572)
     p += rows(28, 570, DATA['interests'], 544, step=32, size=18)
-    p += section(28, 686, "Featured project", 572)
-    p += [text(28, 724, DATA['project']['name'], 25, BLUE, font_weight="600"),
-          text(28, 758, "Matching themes for", 19),
-          text(28, 786, "Terminal.app + Ghostty", 19),
-          text(28, 822, DATA['project']['stack'], 17, MUTED),
-          text(28, 869, "$ build; automate; train", 17, GREEN)]
-    footer(p, 600, 960)
+    p += [text(28, 692, "$ build; automate; repeat", 17, GREEN)]
+    footer(p, 600, 792)
     return "\n".join(p)
 
 
